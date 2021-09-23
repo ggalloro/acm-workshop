@@ -1,0 +1,17 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: trusted-repo
+spec:
+  enforcementAction: deny
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    namespaces:
+      - "application1"
+      - "application2"
+      - "default"
+  parameters:
+    repos:
+      - "europe-docker.pkg.dev/galloro-demos/trusted"

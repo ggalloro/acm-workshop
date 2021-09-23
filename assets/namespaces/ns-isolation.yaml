@@ -1,0 +1,18 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: ns-isolation
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector: {}
+  egress:
+  - to:
+    - namespaceSelector: {}
+    - podSelector: {}
+    - ipBlock:
+        cidr: 172.16.0.4/32 #Replace with outbound target you want to allow communication to

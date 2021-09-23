@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-privileged2
+  labels:
+    app: nginx-privileged
+spec:
+  containers:
+  - name: nginx
+    image: europe-docker.pkg.dev/galloro-demos/trusted/nginx
+    securityContext:
+      privileged: true
+

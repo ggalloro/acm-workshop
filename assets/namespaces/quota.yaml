@@ -1,0 +1,10 @@
+kind: ResourceQuota
+apiVersion: v1
+metadata:
+  name: standard-ns-quota
+spec:
+  hard:
+    pods: "5"
+    cpu: "2"
+    memory: 4Gi
+
