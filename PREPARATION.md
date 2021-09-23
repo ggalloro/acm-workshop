@@ -19,3 +19,5 @@
     1. Clone the fork of this repo locally in the Cloud Shell
     2. [Configure cluster access through kubectl](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl) for the GKE cluster (or clusters) 
     3. (only for the 2nd user account) Configure personal access token for Github account
+
+## [Run the Workshop](EXECUTION%20SCRIPT.md)
