@@ -2,7 +2,6 @@
 echo "ACM Workshop user accounts set up"
 echo
 echo "Enter 1st user name:"
-echo "Enter 1st user name:"
 read user1
 sed -i.bak "s/user1/$user1/g" assets/namespaces/application1/user1_bind.yaml
 echo "Enter 2nd user name:"
