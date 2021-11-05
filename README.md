@@ -1,4 +1,4 @@
-# ACM Workshop 
+# Anthos Config Management Workshop 
 # **Using Source Code Management Patterns to Configure & Secure Kubernetes Clusters**
 
 This repo contains assets to run an [Anthos Config Management](https://cloud.google.com/anthos-config-management/docs/overview) (ACM) workshop.
