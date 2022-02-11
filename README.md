@@ -7,7 +7,7 @@ The workshop shows how to use Anthos Config Management to manage multiple Kubern
 
 * Centrally configure and manage 'landing-zones' for multiple application deployment teams
 * Implement pull request flows to request and approve changes
-* Enforce security guardrails through Policy Controller constraints (based on OPA Gatekeeper)
+* Enforce security guardrails through Policy Controller constraints (based on [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper))
 
 The person running the workshop impersonates the 'platform team' and the 'security team' defining managed clusters configurations and security policies (quotas, rbac, network policies, etc...) and, in addition to that, will use two distinct Google accounts to impersonate 2 different application delivery teams deploying workloads in their assigned 'landing zones' defined as namespaces named *application1* and *application2*.
 
