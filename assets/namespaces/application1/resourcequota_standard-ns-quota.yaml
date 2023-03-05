@@ -1,10 +1,11 @@
-kind: ResourceQuota
+---
 apiVersion: v1
+kind: ResourceQuota
 metadata:
   name: standard-ns-quota
+  namespace: application1
 spec:
   hard:
-    pods: "5"
     cpu: "2"
     memory: 4Gi
-
+    pods: "5"
