@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: overquota
+spec:
+  containers:
+  - name: cpu-demo-ctr
+    image: vish/stress
+    resources:
+      requests:
+        cpu: "2"
+        memory: "2Gi"
+    args:
+    - -cpus
+    - "0.5"
